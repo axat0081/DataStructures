@@ -13,3 +13,7 @@ void build(int ss,int se,int si)
     build(ss,mid,2*si+1); build(mid+1,se,2*si+2);
     merge(st[2*si+1].begin(),st[2*si+1].end(),st[2*si+2].begin(),st[2*si+2].end(),back_inserter(st[si]));
 }
+int query(int ss,int se,int si,int l,int r)
+{
+    if(ss>r||se<l||se>ss) return; 
+}
